@@ -15,6 +15,7 @@
 		3753BBBC2BA30B06007BBBD2 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */; };
 		3753BBBE2BA30F21007BBBD2 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBBD2BA30F21007BBBD2 /* GFButton.swift */; };
 		3753BBC02BA30F3F007BBBD2 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBBF2BA30F3F007BBBD2 /* GFTextField.swift */; };
+		3753BBC22BA310A2007BBBD2 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBC12BA310A2007BBBD2 /* FollowerListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		3753BBBD2BA30F21007BBBD2 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		3753BBBF2BA30F3F007BBBD2 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		3753BBC12BA310A2007BBBD2 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		3753BB992BA30872007BBBD2 = {
 			isa = PBXGroup;
 			children = (
+				3753BBC12BA310A2007BBBD2 /* FollowerListVC.swift */,
 				3753BBA42BA30872007BBBD2 /* GHFollowers */,
 				3753BBA32BA30872007BBBD2 /* Products */,
 			);
@@ -147,6 +150,7 @@
 				3753BBBA2BA30A8F007BBBD2 /* SearchVC.swift in Sources */,
 				3753BBBE2BA30F21007BBBD2 /* GFButton.swift in Sources */,
 				3753BBA62BA30872007BBBD2 /* AppDelegate.swift in Sources */,
+				3753BBC22BA310A2007BBBD2 /* FollowerListVC.swift in Sources */,
 				3753BBA82BA30872007BBBD2 /* SceneDelegate.swift in Sources */,
 				3753BBC02BA30F3F007BBBD2 /* GFTextField.swift in Sources */,
 			);
