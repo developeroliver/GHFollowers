@@ -12,6 +12,8 @@
 		3753BBAA2BA30872007BBBD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBA92BA30872007BBBD2 /* ViewController.swift */; };
 		3753BBAF2BA30873007BBBD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3753BBAE2BA30873007BBBD2 /* Assets.xcassets */; };
 		3753BBB22BA30873007BBBD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753BBB02BA30873007BBBD2 /* LaunchScreen.storyboard */; };
+		3753BBBA2BA30A8F007BBBD2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBB92BA30A8F007BBBD2 /* SearchVC.swift */; };
+		3753BBBC2BA30B06007BBBD2 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3753BBAE2BA30873007BBBD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3753BBB12BA30873007BBBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3753BBB32BA30873007BBBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3753BBB92BA30A8F007BBBD2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				3753BBAE2BA30873007BBBD2 /* Assets.xcassets */,
 				3753BBB02BA30873007BBBD2 /* LaunchScreen.storyboard */,
 				3753BBB32BA30873007BBBD2 /* Info.plist */,
+				3753BBB92BA30A8F007BBBD2 /* SearchVC.swift */,
+				3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -134,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3753BBBC2BA30B06007BBBD2 /* FavoritesVC.swift in Sources */,
+				3753BBBA2BA30A8F007BBBD2 /* SearchVC.swift in Sources */,
 				3753BBAA2BA30872007BBBD2 /* ViewController.swift in Sources */,
 				3753BBA62BA30872007BBBD2 /* AppDelegate.swift in Sources */,
 				3753BBA82BA30872007BBBD2 /* SceneDelegate.swift in Sources */,
