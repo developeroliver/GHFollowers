@@ -54,7 +54,6 @@
 		3753BB992BA30872007BBBD2 = {
 			isa = PBXGroup;
 			children = (
-				3753BBC72BA31211007BBBD2 /* GFAlertVC.swift */,
 				3753BBA42BA30872007BBBD2 /* GHFollowers */,
 				3753BBA32BA30872007BBBD2 /* Products */,
 			);
@@ -71,21 +70,54 @@
 		3753BBA42BA30872007BBBD2 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				3753BBC12BA310A2007BBBD2 /* FollowerListVC.swift */,
-				3753BBBF2BA30F3F007BBBD2 /* GFTextField.swift */,
-				3753BBBD2BA30F21007BBBD2 /* GFButton.swift */,
+				3753BBCE2BA3133C007BBBD2 /* Screens */,
+				3753BBCD2BA31314007BBBD2 /* Custom Views */,
+				3753BBCB2BA312EF007BBBD2 /* Extensions */,
+				3753BBCC2BA312F7007BBBD2 /* Support */,
+				3753BBB32BA30873007BBBD2 /* Info.plist */,
+			);
+			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		3753BBCB2BA312EF007BBBD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBC92BA3122C007BBBD2 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3753BBCC2BA312F7007BBBD2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				3753BBA52BA30872007BBBD2 /* AppDelegate.swift */,
 				3753BBA72BA30872007BBBD2 /* SceneDelegate.swift */,
 				3753BBAE2BA30873007BBBD2 /* Assets.xcassets */,
 				3753BBB02BA30873007BBBD2 /* LaunchScreen.storyboard */,
-				3753BBB32BA30873007BBBD2 /* Info.plist */,
-				3753BBB92BA30A8F007BBBD2 /* SearchVC.swift */,
-				3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */,
-				3753BBC32BA311D4007BBBD2 /* GFTitleLabel.swift */,
-				3753BBC52BA311F5007BBBD2 /* GFBodyLabel.swift */,
-				3753BBC92BA3122C007BBBD2 /* UIViewController+Ext.swift */,
 			);
-			path = GHFollowers;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3753BBCD2BA31314007BBBD2 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBC72BA31211007BBBD2 /* GFAlertVC.swift */,
+				3753BBC52BA311F5007BBBD2 /* GFBodyLabel.swift */,
+				3753BBBD2BA30F21007BBBD2 /* GFButton.swift */,
+				3753BBBF2BA30F3F007BBBD2 /* GFTextField.swift */,
+				3753BBC32BA311D4007BBBD2 /* GFTitleLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3753BBCE2BA3133C007BBBD2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */,
+				3753BBC12BA310A2007BBBD2 /* FollowerListVC.swift */,
+				3753BBB92BA30A8F007BBBD2 /* SearchVC.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
