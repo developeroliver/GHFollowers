@@ -5,7 +5,7 @@
 //  Created by olivier geiger on 14/03/2024.
 //
 
-import Foundation
+import UIKit
 
 enum GFError: String, Error {
     case invalidUsername  = "This username created an invalid request. Please try again."

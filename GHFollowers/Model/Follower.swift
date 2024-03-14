@@ -5,7 +5,7 @@
 //  Created by olivier geiger on 14/03/2024.
 //
 
-import Foundation
+import UIKit
 
 struct Follower: Codable, Hashable {
     var login: String
