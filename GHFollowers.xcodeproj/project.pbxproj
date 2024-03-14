@@ -23,7 +23,7 @@
 		3753BBD12BA31E56007BBBD2 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBD02BA31E56007BBBD2 /* Follower.swift */; };
 		3753BBD32BA31F12007BBBD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBD22BA31F12007BBBD2 /* User.swift */; };
 		3753BBD62BA32B4C007BBBD2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBD52BA32B4C007BBBD2 /* NetworkManager.swift */; };
-		3753BBD92BA33494007BBBD2 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBD82BA33494007BBBD2 /* ErrorMessage.swift */; };
+		3753BBD92BA33494007BBBD2 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBD82BA33494007BBBD2 /* GFError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,7 @@
 		3753BBD02BA31E56007BBBD2 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		3753BBD22BA31F12007BBBD2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3753BBD52BA32B4C007BBBD2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		3753BBD82BA33494007BBBD2 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		3753BBD82BA33494007BBBD2 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 		3753BBD72BA3347A007BBBD2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				3753BBD82BA33494007BBBD2 /* ErrorMessage.swift */,
+				3753BBD82BA33494007BBBD2 /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 				3753BBCA2BA3122C007BBBD2 /* UIViewController+Ext.swift in Sources */,
 				3753BBA62BA30872007BBBD2 /* AppDelegate.swift in Sources */,
 				3753BBC82BA31211007BBBD2 /* GFAlertVC.swift in Sources */,
-				3753BBD92BA33494007BBBD2 /* ErrorMessage.swift in Sources */,
+				3753BBD92BA33494007BBBD2 /* GFError.swift in Sources */,
 				3753BBC62BA311F5007BBBD2 /* GFBodyLabel.swift in Sources */,
 				3753BBD12BA31E56007BBBD2 /* Follower.swift in Sources */,
 				3753BBC42BA311D4007BBBD2 /* GFTitleLabel.swift in Sources */,
