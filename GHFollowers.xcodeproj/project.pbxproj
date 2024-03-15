@@ -27,6 +27,7 @@
 		3753BBDC2BA34E1B007BBBD2 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBDB2BA34E1B007BBBD2 /* FollowerCell.swift */; };
 		3753BBDE2BA34E9A007BBBD2 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBDD2BA34E9A007BBBD2 /* GFAvatarImageView.swift */; };
 		3753BBE02BA389C2007BBBD2 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBDF2BA389C2007BBBD2 /* UIHelper.swift */; };
+		37D12F692BA4457A005DA41A /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D12F682BA4457A005DA41A /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		3753BBDB2BA34E1B007BBBD2 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		3753BBDD2BA34E9A007BBBD2 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		3753BBDF2BA389C2007BBBD2 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		37D12F682BA4457A005DA41A /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +120,13 @@
 		3753BBCD2BA31314007BBBD2 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				37D12F632BA444D0005DA41A /* Buttons */,
 				3753BBDA2BA34DFF007BBBD2 /* Cells */,
-				3753BBC72BA31211007BBBD2 /* GFAlertVC.swift */,
-				3753BBC52BA311F5007BBBD2 /* GFBodyLabel.swift */,
-				3753BBBD2BA30F21007BBBD2 /* GFButton.swift */,
-				3753BBBF2BA30F3F007BBBD2 /* GFTextField.swift */,
-				3753BBC32BA311D4007BBBD2 /* GFTitleLabel.swift */,
-				3753BBDD2BA34E9A007BBBD2 /* GFAvatarImageView.swift */,
+				37D12F642BA444D5005DA41A /* ImageViews */,
+				37D12F662BA444F1005DA41A /* Label */,
+				37D12F672BA44517005DA41A /* TextFields */,
+				37D12F622BA444C9005DA41A /* Views */,
+				37D12F652BA444E1005DA41A /* ViewController */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -171,6 +173,55 @@
 				3753BBDB2BA34E1B007BBBD2 /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		37D12F622BA444C9005DA41A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37D12F682BA4457A005DA41A /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37D12F632BA444D0005DA41A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBBD2BA30F21007BBBD2 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		37D12F642BA444D5005DA41A /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBDD2BA34E9A007BBBD2 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		37D12F652BA444E1005DA41A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBC72BA31211007BBBD2 /* GFAlertVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		37D12F662BA444F1005DA41A /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBC52BA311F5007BBBD2 /* GFBodyLabel.swift */,
+				3753BBC32BA311D4007BBBD2 /* GFTitleLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		37D12F672BA44517005DA41A /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				3753BBBF2BA30F3F007BBBD2 /* GFTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +308,7 @@
 				3753BBC62BA311F5007BBBD2 /* GFBodyLabel.swift in Sources */,
 				3753BBD12BA31E56007BBBD2 /* Follower.swift in Sources */,
 				3753BBC42BA311D4007BBBD2 /* GFTitleLabel.swift in Sources */,
+				37D12F692BA4457A005DA41A /* GFEmptyStateView.swift in Sources */,
 				3753BBD62BA32B4C007BBBD2 /* NetworkManager.swift in Sources */,
 				3753BBC22BA310A2007BBBD2 /* FollowerListVC.swift in Sources */,
 				3753BBA82BA30872007BBBD2 /* SceneDelegate.swift in Sources */,
