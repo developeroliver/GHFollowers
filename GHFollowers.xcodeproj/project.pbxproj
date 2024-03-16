@@ -27,6 +27,7 @@
 		3753BBDC2BA34E1B007BBBD2 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBDB2BA34E1B007BBBD2 /* FollowerCell.swift */; };
 		3753BBDE2BA34E9A007BBBD2 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBDD2BA34E9A007BBBD2 /* GFAvatarImageView.swift */; };
 		3753BBE02BA389C2007BBBD2 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753BBDF2BA389C2007BBBD2 /* UIHelper.swift */; };
+		3789B3172BA5CD6600E2923A /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789B3162BA5CD6600E2923A /* GFItemInfoView.swift */; };
 		37D12F692BA4457A005DA41A /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D12F682BA4457A005DA41A /* GFEmptyStateView.swift */; };
 		37F4F9232BA59C7D007E2A9B /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4F9222BA59C7D007E2A9B /* UserInfoVC.swift */; };
 		37F4F9252BA5AB09007E2A9B /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4F9242BA5AB09007E2A9B /* GFUserInfoHeaderVC.swift */; };
@@ -57,6 +58,7 @@
 		3753BBDB2BA34E1B007BBBD2 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		3753BBDD2BA34E9A007BBBD2 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		3753BBDF2BA389C2007BBBD2 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		3789B3162BA5CD6600E2923A /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		37D12F682BA4457A005DA41A /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		37F4F9222BA59C7D007E2A9B /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		37F4F9242BA5AB09007E2A9B /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				37D12F682BA4457A005DA41A /* GFEmptyStateView.swift */,
+				3789B3162BA5CD6600E2923A /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				3753BB9E2BA30872007BBBD2 /* Sources */,
 				3753BB9F2BA30872007BBBD2 /* Frameworks */,
 				3753BBA02BA30872007BBBD2 /* Resources */,
+				37F4F92A2BA5CB86007E2A9B /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -301,6 +305,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37F4F92A2BA5CB86007E2A9B /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH:\"$PATH:/opt/homebrew/bin\"\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3753BB9E2BA30872007BBBD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,6 +341,7 @@
 				3753BBDE2BA34E9A007BBBD2 /* GFAvatarImageView.swift in Sources */,
 				3753BBA62BA30872007BBBD2 /* AppDelegate.swift in Sources */,
 				3753BBC82BA31211007BBBD2 /* GFAlertVC.swift in Sources */,
+				3789B3172BA5CD6600E2923A /* GFItemInfoView.swift in Sources */,
 				3753BBDC2BA34E1B007BBBD2 /* FollowerCell.swift in Sources */,
 				3753BBD92BA33494007BBBD2 /* GFError.swift in Sources */,
 				37F4F9252BA5AB09007E2A9B /* GFUserInfoHeaderVC.swift in Sources */,
