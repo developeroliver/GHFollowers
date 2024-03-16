@@ -15,6 +15,7 @@ class UserInfoVC: UIViewController {
     var itemViews: [UIView] = []
     
     var username: String!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,19 +27,21 @@ class UserInfoVC: UIViewController {
     
     func configureViewController() {
         view.backgroundColor = .systemBackground
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismssVC))
         navigationItem.rightBarButtonItem = doneButton
     }
     
     
     func getUserInfo() {
-        NetworkManager.shared.getUsersInfo(for: username) { [weak self] result in
+        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
             guard let self = self else { return }
             
             switch result {
             case .success(let user):
                 DispatchQueue.main.async {
                     self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: GFRepoItemVC(user: user), to: self.itemViewOne)
+                    self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
                 }
                 
             case .failure(let error):
@@ -53,6 +56,7 @@ class UserInfoVC: UIViewController {
         let itemHeight: CGFloat = 140
         
         itemViews = [headerView, itemViewOne, itemViewTwo]
+        
         for itemView in itemViews {
             view.addSubview(itemView)
             itemView.translatesAutoresizingMaskIntoConstraints = false
@@ -63,10 +67,6 @@ class UserInfoVC: UIViewController {
             ])
         }
         
-        itemViewOne.backgroundColor = .systemBlue
-        itemViewTwo.backgroundColor = .systemPink
-        
-        
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 180),
@@ -75,7 +75,7 @@ class UserInfoVC: UIViewController {
             itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
             
             itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
-            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
         ])
     }
     
@@ -88,7 +88,7 @@ class UserInfoVC: UIViewController {
     }
     
     
-    @objc func dismissVC() {
+    @objc func dismssVC() {
         dismiss(animated: true)
     }
 }

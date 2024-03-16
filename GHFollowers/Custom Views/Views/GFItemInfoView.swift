@@ -34,7 +34,6 @@ class GFItemInfoView: UIView {
         itemViews = [symbolImageView, titleLabel, countLabel]
         for itemView in itemViews {
             addSubview(itemView)
-            itemView.translatesAutoresizingMaskIntoConstraints = false
         }
         
         symbolImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +46,7 @@ class GFItemInfoView: UIView {
             symbolImageView.widthAnchor.constraint(equalToConstant: 20),
             symbolImageView.heightAnchor.constraint(equalToConstant: 20),
             
-            titleLabel.centerXAnchor.constraint(equalTo: symbolImageView.centerXAnchor),
+            titleLabel.centerYAnchor.constraint(equalTo: symbolImageView.centerYAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
             titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 18),
