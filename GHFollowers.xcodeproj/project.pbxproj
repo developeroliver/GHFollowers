@@ -106,11 +106,11 @@
 		3753BBA42BA30872007BBBD2 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				3753BBCE2BA3133C007BBBD2 /* Controller */,
 				3753BBCD2BA31314007BBBD2 /* Custom Views */,
 				3753BBCB2BA312EF007BBBD2 /* Extensions */,
 				3753BBD42BA32B32007BBBD2 /* Managers */,
 				3753BBCF2BA31E43007BBBD2 /* Model */,
-				3753BBCE2BA3133C007BBBD2 /* Screens */,
 				3753BBCC2BA312F7007BBBD2 /* Support */,
 				3753BBD72BA3347A007BBBD2 /* Utilities */,
 				3753BBB32BA30873007BBBD2 /* Info.plist */,
@@ -153,7 +153,7 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
-		3753BBCE2BA3133C007BBBD2 /* Screens */ = {
+		3753BBCE2BA3133C007BBBD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				3753BBBB2BA30B06007BBBD2 /* FavoritesVC.swift */,
@@ -161,7 +161,7 @@
 				3753BBB92BA30A8F007BBBD2 /* SearchVC.swift */,
 				37F4F9222BA59C7D007E2A9B /* UserInfoVC.swift */,
 			);
-			path = Screens;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		3753BBCF2BA31E43007BBBD2 /* Model */ = {

@@ -18,6 +18,12 @@ class GFRepoItemVC: GFItemInfoVC {
     private func configureItems() {
         itemInfoViewOne.set(itemInfoType: .repos, withCount: user.publicRepos)
         itemInfoViewTwo.set(itemInfoType: .gists, withCount: user.publicGists)
-        actionButton.set(backgroundColor: .systemPurple, title: "GitHub Profile")
+        actionButton.set(backgroundColor: .systemPurple, title: "GitHub Profil")
+    }
+    
+    
+    override func actionButtonTapped() {
+        delegate.didTapGitHubProfile(for: user)
+        print("dismiss")
     }
 }
