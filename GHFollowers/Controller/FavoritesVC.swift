@@ -91,14 +91,12 @@ extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let favorite = favorites[indexPath.row]
-        let descVC   = FollowerListVC()
-        descVC.username = favorite.login
-        descVC.title    = favorite.login
+        let descVC   = FollowerListVC(username: favorite.login)
         
         navigationController?.pushViewController(descVC, animated: true)
     }
     
-    
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard editingStyle == .delete else { return }
         
