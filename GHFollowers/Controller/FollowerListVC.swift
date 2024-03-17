@@ -44,6 +44,9 @@ class FollowerListVC: UIViewController {
     func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = doneButton
     }
     
     
@@ -60,7 +63,7 @@ class FollowerListVC: UIViewController {
         let searchController                                    = UISearchController()
         searchController.searchResultsUpdater                   = self
         searchController.searchBar.delegate                     = self
-        searchController.searchBar.placeholder                  = "Search for a username"
+        searchController.searchBar.placeholder                  = "Recherche d'un nom d'utilisateur"
         searchController.obscuresBackgroundDuringPresentation   = false
         navigationItem.searchController                         = searchController
     }
@@ -78,7 +81,7 @@ class FollowerListVC: UIViewController {
                 self.followers.append(contentsOf: followers)
                 
                 if self.followers.isEmpty {
-                    let message = "This user doesn't have any followers. Go follow them 😀."
+                    let message = "Cet utilisateur n'a pas de followers. Suivez-le 😀."
                     DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view) }
                     return
                 }
@@ -86,7 +89,7 @@ class FollowerListVC: UIViewController {
                 self.updateData(on: self.followers)
                 
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Bad Stuff Happend", message: error.rawValue, buttonTitle: "Ok")
+                self.presentGFAlertOnMainThread(title: "Un problème est survenu", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
@@ -106,6 +109,11 @@ class FollowerListVC: UIViewController {
         snapshot.appendSections([.main])
         snapshot.appendItems(followers)
         DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true) }
+    }
+    
+    
+    @objc func addButtonTapped() {
+        print("Add button tapped")
     }
 }
 

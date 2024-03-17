@@ -33,7 +33,7 @@ class UserInfoVC: UIViewController {
     
     func configureViewController() {
         view.backgroundColor = .systemBackground
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismssVC))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButton
     }
     
@@ -107,7 +107,7 @@ class UserInfoVC: UIViewController {
     }
     
     
-    @objc func dismssVC() {
+    @objc func dismissVC() {
         dismiss(animated: true)
     }
 }
@@ -116,7 +116,7 @@ class UserInfoVC: UIViewController {
 extension UserInfoVC: UserInfoVCDelegate {
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
-            presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this use is invalid.", buttonTitle: "Ok")
+            presentGFAlertOnMainThread(title: "URL invalide", message: "L'url attachée à cette utilisation n'est pas valide.", buttonTitle: "Ok")
             return
         }
         presentSafariVC(with: url)
@@ -124,7 +124,7 @@ extension UserInfoVC: UserInfoVCDelegate {
     
     func didTapGetFollowers(for user: User) {
         delegate.didRequestFollowers(for: user.login)
-        dismssVC()
+        dismissVC()
     }
     
   

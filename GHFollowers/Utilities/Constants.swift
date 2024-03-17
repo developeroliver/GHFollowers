@@ -17,8 +17,8 @@ enum SFSymbols {
 
 
 enum TextString {
-    static let noLocation       = "No Location"
-    static let noBioAvailable   = "No bio available"
-    static let githubProfile    = "GitHub Profile"
-    static let getFollowers     = "Get Followers"
+    static let noLocation       = "Pas de localisation"
+    static let noBioAvailable   = "Pas de bio disponible"
+    static let githubProfile    = "Profil GitHub"
+    static let getFollowers     = "Obtenir des followers"
 }

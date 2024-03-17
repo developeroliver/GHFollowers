@@ -8,8 +8,8 @@
 import UIKit
 
 enum GFError: String, Error {
-    case invalidUsername  = "This username created an invalid request. Please try again."
-    case unableToComplete = "Unable to complete your request. Please check your internet connection."
-    case invalidResponse  = "Invalid response from the server. Please try again."
-    case invalidData      = "The data receive from the server was invalid. Please try again."
+    case invalidUsername  = "Ce nom d'utilisateur a créé une demande non valide. Veuillez réessayer."
+    case unableToComplete = "Impossible de compléter votre demande. Veuillez vérifier votre connexion internet."
+    case invalidResponse  = "Réponse invalide du serveur. Veuillez réessayer."
+    case invalidData      = "Les données reçues du serveur n'étaient pas valides. Veuillez réessayer."
 }
